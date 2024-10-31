@@ -1,0 +1,389 @@
+:root {
+    --primary: #3c2a21;
+    --bg:  rgb(250, 220, 180);;
+    --font: #ffff;
+    --span: #000000;
+  }
+  
+  * {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: var(--font);
+  }
+  span {
+    color: #fad292;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 7%;
+    backdrop-filter: blur(1rem);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+  }
+  
+  .navbar .navbar-logo {
+    margin: 0;
+    padding: 0;
+    width: 5rem;
+    height: 2.6rem;
+    position: relative;
+  }
+  
+  .navbar .navbar-logo img {
+    height: 100%;
+    width: 100%;
+  }
+  .navbar .navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 0.5rem 1rem 0.1rem;
+    font-family: "Montserrat";
+    font-weight: 510;
+  }
+  
+  .navbar .navbar-nav a:hover {
+    color: #ffeac5;
+  }
+  
+  .navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid hsl(38, 100%, 89%);
+    transform: scaleX(0);
+  }
+  
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.8);
+    transition: 0.2s linear;
+  }
+  
+  .navbar .navbar-icon a {
+    color: #ffff;
+    margin: 0 0.5 rem;
+  }
+  
+  .navbar .navbar-icon a:hover {
+    color: var(--font);
+    transition: 0.3s ease-in-out;
+  }
+  
+  .hero {
+    min-height: 100vh;
+    margin: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(Image/gitar4.png);
+    background-repeat: no-repeat;
+    background-size: 100rem;
+    background-position: center;
+    position: relative;
+  }
+  
+  .hero .content {
+    width: 1180px;
+    height: 600px;
+    padding-top: 10rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .hero h1 {
+    font-size: 6rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .hero p {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--font);
+  }
+  .hero .tombol {
+    justify-content: space-between;
+  }
+  .hero .content .cta {
+    margin-right: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.85rem 4.3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffff;
+    background-color: #c1a57b;
+    border-radius: 0.5rem;
+  }
+  
+  .hero .content .cta2 {
+    margin-left: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #c1a57b;
+    border: #c1a57b solid 1px;
+    border-radius: 0.5rem;
+  }
+  
+  .benefit {
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(250, 220, 180);
+  }
+  
+  .benefit .header {
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 4rem;
+  }
+  
+  .benefit .header h1 {
+    width: 45rem;
+    padding-bottom: 0.5rem;
+    border-bottom: #3c2a21 2px solid;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #3c2a21;
+  }
+  
+  .benefit .benefit-container {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    max-width: 65%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .benefit-a {
+    display: flex;
+    width: 22rem;
+    height: 43rem;
+    border-radius: 1rem;
+    flex-direction: column;
+  }
+  .benefit-a .gambar1 {
+    width: 22rem;
+    height: 28rem;
+    background-color: white;
+    background: url(Image/music-instrument-store.jpg);
+    background-size: cover;
+    border-radius: 0.5rem;
+  }
+  
+  .benefit-a h1 {
+    color: #4a4a4a;
+    padding-left: 0.3rem;
+    padding-top: 0.7rem;
+  }
+  
+  .benefit-a p {
+    color: #757575;
+    padding-left: 0.3rem;
+    padding-top: 0.7rem;
+    font-size: large;
+    max-width: 22rem;
+    max-height: 15rem;
+  }
+  
+  .benefit-b {
+    display: flex;
+    width: 22rem;
+    height: 43rem;
+    border-radius: 1rem;
+    flex-direction: column;
+  }
+  .benefit-b .gambar2 {
+    width: 22rem;
+    height: 28rem;
+    background-color: white;
+    background: url(Image/);
+    background-size: cover;
+    background-position: 60%;
+    border-radius: 0.5rem;
+  }
+  
+  .benefit-b h1 {
+    color: #4a4a4a;
+    padding-left: 0.3rem;
+    padding-top: 0.7rem;
+  }
+  
+  .benefit-b p {
+    color: #757575;
+    padding-left: 0.3rem;
+    padding-top: 0.7rem;
+    font-size: large;
+    max-width: 22rem;
+    max-height: 15rem;
+  }
+  
+  .benefit-c {
+    display: flex;
+    width: 22rem;
+    height: 43rem;
+    border-radius: 1rem;
+    flex-direction: column;
+  }
+  .benefit-c .gambar3 {
+    width: 22rem;
+    height: 28rem;
+    background-color: white;
+    background: url(Image/3473858a4d7c5acd34a68df760e4dbe5.jpg);
+    background-size: cover;
+    border-radius: 0.5rem;
+  }
+  
+  .benefit-c h1 {
+    color: #4a4a4a;
+    padding-left: 0.3rem;
+    padding-top: 0.7rem;
+  }
+  
+  .benefit-c p {
+    color: #757575;
+    padding-left: 0.3rem;
+    padding-top: 0.7rem;
+    font-size: large;
+    max-width: 22rem;
+    max-height: 15rem;
+  }
+  
+  #hamburger-menu {
+    display: none;
+  }
+  
+  /* Media Queries */
+  
+  /* Laptop */
+  @media (max-width: 1366px) {
+    html {
+      font-size: 75%;
+    }
+  }
+  
+  /* Tablet */
+  @media (max-width: 768px) {
+    html {
+      font-size: 62.5%;
+    }
+  
+    #hamburger-menu {
+      display: inline-block;
+    }
+  
+    /* Style when active */
+    .navbar .navbar-nav {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      background-color: rgba(26, 18, 11, 0.9);
+      width: 28rem;
+      height: 23rem;
+      transition: 0.3s ease-in-out;
+    }
+  
+    .navbar .navbar-nav.active {
+      margin: 1rem 1rem 0 0;
+      right: 0;
+      height: 29rem;
+      border-radius: 2rem;
+      transition: 0.3s ease-in-out;
+    }
+    .navbar .navbar-nav a {
+      color: #ffff;
+      display: block;
+      margin: 1.5rem;
+      padding: 0.5rem;
+      font-size: 2rem;
+    }
+  
+    .navbar .navbar-nav a::after {
+      transform-origin: 0 0;
+    }
+  
+    .navbar .navbar-nav a:hover::after {
+      transform: scaleX(0.2);
+    }
+  }
+  
+  /* Mobile Phone */
+  @media (max-width: 450px) {
+    html {
+      font-size: 55%;
+    }
+  }
+
+  
+  @media screen and (max-width: 1000px) {
+    .wrapper {
+        width: 100%;
+    }
+  }
+  
+  .container1 {
+    max-width: 1200px;
+    margin: 70px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(75, 0, 0, 0.1);
+    position: relative; /* Untuk mengatur posisi elemen anak */
+  }
+.GitarClassic {
+    font-family: 'Poppins';
+    color: #000000;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    font-size: 50px; 
+}
+
+.guitar1 {
+  border: 5px solid #000000; /* Warna dan ukuran border */
+  border-radius: 10px; /* Membuat sudut border melengkung */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+  width: 20rem;
+}
+
+
+  .JUDUL1{
+    text-align: center; /* Memusatkan judul */
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    
+  }
+
+.image{
+  display: flex; /* Menggunakan flexbox */
+  justify-content: flex-start; /* Mengatur gambar ke kiri */
+  align-items: flex-start; /* Menyelaraskan gambar di atas */
+}

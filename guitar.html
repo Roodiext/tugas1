@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Form</title>
+    <link rel="stylesheet" href="guitar.css"/>
+</head>
+<body>
+    <h1 class="rexr">Guitar</h1>
+    <h1 aria-hidden="true" class="text outline-text">Scrolly image</h1>
+    <h1 aria-hidden="true" class="text filter-text">Scrolly image</h1>
+    
+    <div id="wrapper">
+        <div id="content">
+            <section id="container">
+                <section class="image">
+                    <img data-speed="0.8" src="gutarr/GITAR1.jpg" alt="">
+                    <img data-speed="0.9" src="gutarr/GITAR2.jpg" alt="">
+                    <img data-speed="1" src="gutarr/GITAR3.jpg" alt="">
+                    <img data-speed="1.1" src="gutarr/GITAR4.jpg" alt="">
+                    <img data-speed="0.9" src="gutarr/GITAR5.jpg" alt="">
+                    <img data-speed="1.2" src="gutarr/GITAR6.jpg" alt="">
+                    <img data-speed="0.8" src="gutarr/GITAR7.jpg" alt="">
+                    <img data-speed="1" src="gutarr/GITAR8.jpg" alt="">
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollSmoother.min.js"></script>
+    <script>
+        let skewSetter = gsap.quickTo("img", "skewY"),
+            clamp = gsap.utils.clamp(-20, 20);
+
+        ScrollSmoother.create({
+            wrapper: "#wrapper",
+            content: "#content",
+            smooth: 2,
+            effects: true,
+            onUpdate: self => skewSetter(clamp(self.getVelocity() / -50)),
+            onStop: () => skewSetter(0)
+        });
+    </script>
+</body>
+</html>
